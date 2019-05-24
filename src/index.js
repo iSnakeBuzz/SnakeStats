@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//Importing utilities
+import {BrowserRouter, Route} from "react-router-dom";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// importing CSS
+import './css/bootstrap.min.css';
+import './css/SnakeStats.css';
+import './css/animations.css';
+
+//Importing modules
+import mainContent from './modules/MainContent';
+
+ReactDOM.render(<BrowserRouter><Route path="/"
+                                      component={mainContent}/></BrowserRouter>, document.getElementById('snakeContent'));
+
 serviceWorker.unregister();
