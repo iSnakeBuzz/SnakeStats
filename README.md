@@ -1,3 +1,10 @@
+# A statistics site.
+
+A simple site for statistics. (You will need a backend, I lost the one I did 🙁)
+
+This is one of my first projects created in ReactJS.
+
+----
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
